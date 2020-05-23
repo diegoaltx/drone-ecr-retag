@@ -37,7 +37,7 @@ def get_repo(env):
 
 def get_commit_tags(env):
   commit = env.get('DRONE_COMMIT')
-  refs = [commit[0:8]]
+  refs = [commit[0:7]]
 
   return ['commit-' + ref for ref in refs]
 
